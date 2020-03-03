@@ -45,7 +45,7 @@ function drawKeypoints(poses) {
       if (keypoint.score > 0.2) {
         fill(0, 255, 0);
         noStroke();
-        ellipse(keypoint.position.x, keypoint.position.y, 20, 10);
+        ellipse(keypoint.position.x, keypoint.position.y, 10, 10);
       }
     })
   );
@@ -57,7 +57,7 @@ function drawSkeleton(poses) {
     pose.skeleton.forEach(skeleton => {
       // skeleton is an array of two keypoints. Extract the keypoints.
       const [p1, p2] = skeleton;
-      stroke(255, 0, 0);
+      stroke(100, 0, 0);
       line(p1.position.x, p1.position.y, p2.position.x, p2.position.y);
     });
   });
