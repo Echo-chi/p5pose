@@ -1,10 +1,14 @@
-body {
+html, body {
     margin: 0;
+    height:100%;
 }
+
+
 
 /* This rule isn't used in the project as distributed, because the JavaScript
 code hides the video element. */
 body video {
     position: absolute;
-    opacity: 0.5;
+    opacity: 1;
+
 }
